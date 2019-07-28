@@ -37,6 +37,7 @@ def check_factorial(factorial, val=10):
     print("Checking function {}, input values {}, {}".format(factorial.__name__, val, 1))
     print(factorial(val))
     print(factorial(1))
+    print(type(factorial))
 
 
 check_factorial(factorial_recursive)
