@@ -1,0 +1,42 @@
+squares = [0, 1, 4, 9, 16]
+
+print(squares.count(4))
+squares.clear()
+print(squares)
+squares.extend([16, 25, 36])
+squares.remove(25)
+print(squares)
+print(squares.pop(1))
+print(squares)
+
+letters = ["a", "b", "cd"]
+
+print(type(letters))
+print(letters)
+letters.reverse()
+print(letters)
+letters.sort()
+print(letters)
+letters.insert(7, "aa")
+print(letters)
+
+print("""
+
+equality:""")
+letters = ["a", "b"]
+print(letters == letters)
+print(letters == ["a", "b"])
+print(letters == ["b", "a"])
+letters.reverse()
+print(letters == ["b", "a"])
+
+print("""
+
+comparison:""")
+letters.sort()
+print(letters)
+print(letters > [])
+print(letters > ["a"])
+print(letters > ["a", "b", "c"])
+print(letters > ["1", "2", "3"])
+print(letters >= ["b", "c"])
