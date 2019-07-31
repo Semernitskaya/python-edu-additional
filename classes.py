@@ -18,8 +18,10 @@ class Shape:
     def __str__(self) -> str:
         return "Shape {}, color {}, sizes {}".format(self.shape_type, self.color, self.sizes)
 
+
 def rectangle_square(sizes: tuple):
     return sizes[0] * sizes[1]
+
 
 blue_circle = Shape("circle", "blue")
 print(blue_circle)
